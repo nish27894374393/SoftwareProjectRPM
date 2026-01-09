@@ -4,8 +4,8 @@ import Alarm.*;
 
 public class Temperature extends VitalSign {
 
-    public Temperature(String patientID, double value) {
-        super(patientID, value);
+    public Temperature(double value) {
+        super(value);
     }
 
     @Override

@@ -8,10 +8,9 @@ public abstract class VitalSign {
 
     protected LocalDateTime dateTime;
     protected double value;
-    protected String patientID;
+\
 
-    public VitalSign(String patientID, double value) {
-        this.patientID = patientID;
+    public VitalSign(double value) {
         this.value = value;
         this.dateTime = LocalDateTime.now();
     }
@@ -20,9 +19,7 @@ public abstract class VitalSign {
         return value;
     }
 
-    public String getPatientID() {
-        return patientID;
-    }
+
 
     public LocalDateTime getDateTime() {
         return dateTime;

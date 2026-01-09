@@ -3,8 +3,8 @@ package AllVitalSigns;
 import Alarm.AlarmLevel;
 
 public class RespRate extends VitalSign{
-    public RespRate(String patientID, double value) {
-        super(patientID, value);
+    public RespRate(double value) {
+        super(value);
     }
 
     @Override
