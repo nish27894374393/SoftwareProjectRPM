@@ -11,7 +11,12 @@ public class VitalSignsGenerator {
     public static int generateHeartRate() {
         return randomIntInRange(30, 120);
     }
-
+    public static int generateSystolic() {
+        return randomIntInRange(80, 160);
+    }
+    public static int generateDiastolic() {
+        return randomIntInRange(50, 100);
+    }
     /**
      * Generates random blood pressure values (systolic/diastolic)
      * Typical normal range: 90–120 / 60–80 mmHg
