@@ -3,7 +3,6 @@ package Alarm;
 import java.time.LocalDateTime;
 
 public class Alarm {
-
     private String patientID;
     private VitalSign vitalSign;
     private AlarmLevel alarmLevel;
@@ -14,7 +13,7 @@ public class Alarm {
         this.vitalSign = vitalSign;
         this.patientID = vitalSign.getPatientID();
         this.alarmLevel = vitalSign.getAlarmLevel();
-        this.dateTime = LocalDateTime.now();
+        this.dateTime = vitalSign.getDateTime();
         this.message = buildMessage();
     }
 
