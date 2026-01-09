@@ -4,8 +4,8 @@ import Alarm.*;
 
 public class HeartRate extends VitalSign {
 
-    public HeartRate(String patientID, double value) {
-        super(patientID, value);
+    public HeartRate(double value) {
+        super(value);
     }
 
     @Override

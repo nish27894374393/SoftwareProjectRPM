@@ -3,8 +3,8 @@ package AllVitalSigns;
 import Alarm.AlarmLevel;
 public class BloodPressure extends VitalSign{
     private double diastole, presRatio;
-    public BloodPressure(String patientID, double value, double diastole) {
-        super(patientID, value); //value=systole
+    public BloodPressure(double value, double diastole) {
+        super(value); //value=systole
         this.diastole=diastole;
     }
 
