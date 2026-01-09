@@ -8,7 +8,7 @@ public abstract class VitalSign {
 
     protected LocalDateTime dateTime;
     protected double value;
-\
+
 
     public VitalSign(double value) {
         this.value = value;
