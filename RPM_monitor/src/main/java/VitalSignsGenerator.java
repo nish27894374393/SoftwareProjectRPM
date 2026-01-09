@@ -81,4 +81,13 @@ public class VitalSignsGenerator {
         }
     }
 
+    /* ---------- Example Usage ---------- */
+
+    public static void main(String[] args) throws InterruptedException {
+        System.out.println("Heart Rate: " + generateHeartRate() + " bpm");
+        System.out.println("Blood Pressure: " + generateBloodPressure());
+        System.out.println("ECG: " + generateECG() + " mV");
+        System.out.println("Respiratory Rate: " + generateRespiratoryRate() + " breaths/min");
+        System.out.println("Body Temperature: " + generateBodyTemperature() + " °C");
+    }
 }
