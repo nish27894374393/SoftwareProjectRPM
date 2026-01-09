@@ -17,15 +17,6 @@ public class VitalSignsGenerator {
     public static int generateDiastolic() {
         return randomIntInRange(50, 100);
     }
-    /**
-     * Generates random blood pressure values (systolic/diastolic)
-     * Typical normal range: 90–120 / 60–80 mmHg
-     */
-    public static BloodPressure generateBloodPressure() {
-        int systolic = randomIntInRange(80, 160);
-        int diastolic = randomIntInRange(50, 100);
-        return new BloodPressure(systolic, diastolic);
-    }
 
     /**
      * Generates a random ECG value (simulated voltage in millivolts)
@@ -61,38 +52,4 @@ public class VitalSignsGenerator {
         return min + (max - min) * random.nextDouble();
     }
 
-    /* ---------- Supporting Class ---------- */
-
-    public static class BloodPressure {
-        private final int systolic;
-        private final int diastolic;
-
-        public BloodPressure(int systolic, int diastolic) {
-            this.systolic = systolic;
-            this.diastolic = diastolic;
-        }
-
-        public int getSystolic() {
-            return systolic;
-        }
-
-        public int getDiastolic() {
-            return diastolic;
-        }
-
-        @Override
-        public String toString() {
-            return systolic + "/" + diastolic + " mmHg";
-        }
-    }
-
-    /* ---------- Example Usage ---------- */
-
-    public static void main(String[] args) throws InterruptedException {
-        System.out.println("Heart Rate: " + generateHeartRate() + " bpm");
-        System.out.println("Blood Pressure: " + generateBloodPressure());
-        System.out.println("ECG: " + generateECG() + " mV");
-        System.out.println("Respiratory Rate: " + generateRespiratoryRate() + " breaths/min");
-        System.out.println("Body Temperature: " + generateBodyTemperature() + " °C");
-    }
 }
