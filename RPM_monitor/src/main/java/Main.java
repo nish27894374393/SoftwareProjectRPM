@@ -1,6 +1,24 @@
+package rpm;
 
-public class Main {
+public class RpmApp {
+
     public static void main(String[] args) {
+
+        //VitalSimulator simulator = /* Nish
+        //AlarmEngine alarmEngine = /* Belle
+        //VitalRepository repository = /* Rachel
+        //Dashboard dashboard = /* Hui
+
+        simulator.addListener(alarmEngine);
+        simulator.addListener(repository);
+
+        alarmEngine.addAlarmListener(repository);
+        alarmEngine.addAlarmListener(dashboard);
+
+        simulator.start("normal");
+        dashboard.show();
+    }
+}
         System.out.println("Hello world");
 
         //code to test if the generator works
