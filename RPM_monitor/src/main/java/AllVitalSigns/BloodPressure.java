@@ -19,4 +19,8 @@ public class BloodPressure extends VitalSign{
 
         return AlarmLevel.GREEN;
     }
+
+    public double getDiastole(){
+        return diastole;
+    }
 }
