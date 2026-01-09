@@ -1,9 +1,10 @@
 package Alarm;
 
+import AllVitalSigns.VitalSign;
+
 import java.time.LocalDateTime;
 
 public class Alarm {
-    private String patientID;
     private VitalSign vitalSign;
     private AlarmLevel alarmLevel;
     private String message;
@@ -11,15 +12,13 @@ public class Alarm {
 
     public Alarm(VitalSign vitalSign) {
         this.vitalSign = vitalSign;
-        this.patientID = vitalSign.getPatientID();
         this.alarmLevel = vitalSign.getAlarmLevel();
         this.dateTime = vitalSign.getDateTime();
         this.message = buildMessage();
     }
 
     private String buildMessage() {
-        return "Patient " + patientID +
-                " | Vital: " + vitalSign.getClass().getSimpleName() +
+        return " | Vital: " + vitalSign.getClass().getSimpleName() +
                 " | Value: " + vitalSign.getValue() +
                 " | Level: " + alarmLevel;
     }
