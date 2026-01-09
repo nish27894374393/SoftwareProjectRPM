@@ -83,7 +83,7 @@ public class VitalSignsGenerator {
 
     /* ---------- Example Usage ---------- */
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         System.out.println("Heart Rate: " + generateHeartRate() + " bpm");
         System.out.println("Blood Pressure: " + generateBloodPressure());
         System.out.println("ECG: " + generateECG() + " mV");
