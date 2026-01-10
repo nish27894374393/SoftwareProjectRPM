@@ -1,27 +1,44 @@
+import AllVitalSigns.*;
+import java.util.ArrayList;
+
 public class Patient extends VitalSignsGenerator {
+    private int id;
     private String name;
     private int age;
-    private int hr;
-    private BloodPressure bp;
-    private double ECG;
-    private int RR;
-    private double temp;
+    private ArrayList<HeartRate> HeartRateHistory;
+    private ArrayList<BloodPressure> BloodPressureHistory;
+    private ArrayList<RespRate> RespRateHistory;
+    private ArrayList<Temperature> TemperatureHistory;
+    private ArrayList<ECG> ECGHistory;
 
-    public Patient(String name, int age) {
+
+    public Patient(int id, String name, int age) {
+        this.id = id;
         this.name = name;
         this.age = age;
+        this.HeartRateHistory = new ArrayList<>();
+        this.BloodPressureHistory = new ArrayList<>();
+        this.RespRateHistory = new ArrayList<>();
+        this.TemperatureHistory = new ArrayList<>();
+        this.ECGHistory = new ArrayList<>();
         updateVitals();
+
     }
 
     public void updateVitals() {
-        this.hr = generateHeartRate();
-        this.bp = generateBloodPressure();
-        this.ECG = generateECG();
-        this.RR = generateRespiratoryRate();
-        this.temp = generateBodyTemperature();
+        HeartRateHistory.add(new HeartRate(generateHeartRate()));
+        BloodPressureHistory.add(new BloodPressure(generateBloodPressure()));
+        RespRateHistory.add(new RespRate(generateRespiratoryRate()));
+        TemperatureHistory.add(new Temperature(generateBodyTemperature()));
+        ECGHistory.add(new ECG(generateECG()));
+
     }
 
     /* ----- Getters ----- */
+    public int getId () {
+        return id;
+    }
+
     public String getName() {
         return name;
     }
@@ -65,7 +82,7 @@ public class Patient extends VitalSignsGenerator {
         /* ----- Example usage ----- */
 
         public static void main(String[] args) throws InterruptedException {
-            Patient p = new Patient("John Smith", 35);
+            Patient p = new Patient(1,"John Smith", 35);
 
             while (true) {
                 p.updateVitals();
