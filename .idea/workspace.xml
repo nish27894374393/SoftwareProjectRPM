@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd358ba3-b348-47ad-8399-f6ec38b6c969" name="Changes" comment="" />
+    <list default="true" id="fd358ba3-b348-47ad-8399-f6ec38b6c969" name="Changes" comment="Rachel's changing it">
+      <change beforePath="$PROJECT_DIR$/Just a random file" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainDashboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPM_monitor/src/main/java/VitalSigns.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPM_monitor/src/main/java/rdm/domain/domain.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPM_monitor/src/main/java/rpm/domain/domain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPM_monitor/src/main/java/rdm/stream/AlarmEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPM_monitor/src/main/java/rpm/stream/AlarmEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPM_monitor/src/main/java/rdm/stream/TimeWindowListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPM_monitor/src/main/java/rpm/stream/TimeWindowListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPM_monitor/src/main/java/rdm/stream/VitalSampleListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/RPM_monitor/src/main/java/rpm/stream/VitalSampleListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalSigns.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,18 +43,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Rachel Wong/Documents/Yr3 SEfB/SoftwareProjectRPM",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="SoftwareProjectRPM" />
@@ -122,10 +140,24 @@
       <option name="presentableId" value="Default" />
       <updated>1768053147037</updated>
       <workItem from="1768053148266" duration="18000" />
+      <workItem from="1768053184491" duration="489000" />
     </task>
+    <task id="LOCAL-00001" summary="Rachel's changing it">
+      <option name="closed" value="true" />
+      <created>1768053420349</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1768053420349</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Rachel's changing it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rachel's changing it" />
   </component>
 </project>
