@@ -27,7 +27,7 @@ public class Patient extends VitalSignsGenerator {
 
     public void updateVitals() {
         HeartRateHistory.add(new HeartRate(generateHeartRate()));
-        BloodPressureHistory.add(new BloodPressure(generateBloodPressure()));
+        BloodPressureHistory.add(new BloodPressure(generateSystolic(), generateDiastolic()));
         RespRateHistory.add(new RespRate(generateRespiratoryRate()));
         TemperatureHistory.add(new Temperature(generateBodyTemperature()));
         ECGHistory.add(new ECG(generateECG()));
@@ -47,37 +47,37 @@ public class Patient extends VitalSignsGenerator {
         return age;
     }
 
-    public int getHr() {
-        return hr;
+    public int getHrHis() {
+        return HeartRateHistory;
     }
 
-    public BloodPressure getBp() {
-        return bp;
+    public BloodPressure getBpHis() {
+        return BloodPressureHistory;
     }
 
-    public double getECG() {
-        return ECG;
+    public double getECGHis() {
+        return ECGHistory;
     }
 
-    public int getRR() {
-        return RR;
+    public int getRRHis() {
+        return RespRateHistory;
     }
 
-    public double getTemp() {
-        return temp;
+    public double getTempHis() {
+        return TemperatureHistory;
     }
 
     /* ----- Potential Display in the UI ----- */
-    public String PatientDisplay() {
-        return "Patient\n"
-                + "Name: " + name + "\n"
-                + "Age: " + age + "\n"
-                + "Heart Rate: " + hr + " bpm\n"
-                + "Blood Pressure: " + bp.toString() + "\n"
-                + String.format("ECG: %.3f mV%n", ECG)
-                + "Respiratory Rate: " + RR + " breaths/min\n"
-                + String.format("Body Temperature:  %.1f °C%n", temp) + "\n";
-    }
+//    public String PatientDisplay() {
+//        return "Patient\n"
+//                + "Name: " + name + "\n"
+//                + "Age: " + age + "\n"
+//                + "Heart Rate: " + hr + " bpm\n"
+//                + "Blood Pressure: " + bp.toString() + "\n"
+//                + String.format("ECG: %.3f mV%n", ECG)
+//                + "Respiratory Rate: " + RR + " breaths/min\n"
+//                + String.format("Body Temperature:  %.1f °C%n", temp) + "\n";
+//    }
 
         /* ----- Example usage ----- */
 
@@ -86,7 +86,7 @@ public class Patient extends VitalSignsGenerator {
 
             while (true) {
                 p.updateVitals();
-                System.out.println(p.PatientDisplay());
+                //System.out.println(p.PatientDisplay());
                 Thread.sleep(1000);
             }
         }

@@ -4,9 +4,9 @@ import Alarm.AlarmLevel;
 public class BloodPressure extends VitalSign{
 
     private double diastole, presRatio;
-    public BloodPressure(BloodPressure bloodPressure) {
-        this.value = bloodPressure.value; //value=systole
-        this.diastole=bloodPressure.diastole;
+    public BloodPressure(double value, double diastole) {
+        super(value); //value=systole
+        this.diastole= diastole;
     }
 
     @Override
