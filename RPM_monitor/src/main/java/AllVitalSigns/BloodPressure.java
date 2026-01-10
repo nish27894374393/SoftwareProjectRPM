@@ -3,7 +3,7 @@ package AllVitalSigns;
 import Alarm.AlarmLevel;
 public class BloodPressure extends VitalSign{
 
-    private double diastole, presRatio;
+    private double diastole;
     public BloodPressure(double value, double diastole) {
         super(value); //value=systole
         this.diastole= diastole;
@@ -12,7 +12,7 @@ public class BloodPressure extends VitalSign{
     @Override
     public AlarmLevel getAlarmLevel() {
 
-        if (value < 90 || presRatio > 220)
+        if (value < 90 || value > 220)
             return AlarmLevel.RED;
 
         if ((value >= 140 && value < 220) || (value > 90 && value <= 100))
@@ -23,5 +23,9 @@ public class BloodPressure extends VitalSign{
 
     public double getDiastole(){
         return diastole;
+    }
+
+    public double getSystole(){
+        return value;
     }
 }

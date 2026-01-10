@@ -11,6 +11,11 @@ public class VitalSignsGenerator {
     public static int generateHeartRate() {
         return randomIntInRange(30, 120);
     }
+
+    /** * Generates a random systolic and diastolic value
+     * Typical systolic pressure range: 100-140
+     * Typical diastolic pressure range: 70-90
+     */
     public static int generateSystolic() {
         return randomIntInRange(80, 160);
     }
